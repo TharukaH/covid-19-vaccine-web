@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="dashboard.css" />
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="shortcut icon" type="image" href="logo.png">
+    <title>Head Office</title>
+  </head>
+
+  <body id="body">
+    <div class="container">
+      <main>
+        <div class="main__container">
+
+          <!-- CHARTS STARTS HERE -->
+          <div class="charts">
+            <div class="charts__rightD">
+              <div class="charts__right__title">
+                <div>
+                  <h1>Vaccine Stock</h1>
+                  <p>Modarna, Phizer, Sinopharm</p>
+                </div>
+                <i class="fa fa-medkit" aria-hidden="true"></i>
+              </div>
+
+              <div class="charts__right__cards">
+                <div class="cardM">
+                  <h1>Modarna</h1>
+                  <p>2 546 799</p>
+                </div>
+
+                <div class="cardP">
+                  <h1>Phizer</h1>
+                  <p>1 424 200</p>
+                </div>
+
+                <div class="cardS">
+                  <h1>Sinopharm</h1>
+                  <p> 2 456 234</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- CHARTS ENDS HERE -->
+          
+        </div>
+      </main>
+
+      <div class="sidebar">
+        <div class="logo-details">
+          <div class="logo">
+            <div class="logo_name">CITY SMART</div>
+          </div>
+          <i class='bx bx-menu' id="btn" ></i>
+        </div>
+        <ul class="nav-list">   
+          <li>
+            <a href=dashboard.html>
+              <i class='bx bx-grid-alt'></i>
+              <span class="links_name">Dashboard</span>
+            </a>
+             <span class="tooltip">Dashboard</span>
+          </li>
+         <li>
+           <a href=progress.html>
+             <i class='bx bx-bar-chart-alt-2' ></i>
+             <span class="links_name">Vaccination Progress</span>
+           </a>
+           <span class="tooltip">Vaccination Progress</span>
+         </li>
+         <li>
+           <a href="password.html">
+             <i class='bx bx-user' ></i>         
+             <span class="links_name">Password Manager</span>
+           </a>
+           <span class="tooltip">Password Manager</span>
+         </li>
+         <li class="profile">
+          <a href="index.html">
+             <i class='bx bx-log-out' ></i>
+             <span class="links_name">Log Out</span>
+          </a>
+             <span class="tooltip">Log Out</span>
+         </li>
+        </ul>
+      </div>
+      <script src="dashboard.js"></script>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="script.js"></script>
+  </body>
+
+  <body>
+    <div class="table-wrapper">
+        <div class="table-title">
+            <div class="row">
+                <div class="col-sm-6"><h2><b>Covid-19</b> Vaccination</h2></div>
+                <div class="col-sm-6">
+                    <div class="btn-group" data-goggle="buttons">
+                        <label class="btn btn-info active">
+                            <input type="radio" name="status" value="all" checked="checked"> All
+                        </label>
+                        <label class="btn btn-success">
+                            <input type="radio" name="status" value="normal"> Normal
+                        </label>
+                        <label class="btn btn-danger">
+                            <input type="radio" name="status" value="low"> Low
+                        </label>     
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <table class="table table-striped table-hover">
+            <thead>
+                <tr>
+                    <th>Center ID</th>
+                    <th>Center Name&nbsp;</th>
+                    <th>Vaccine Type</th>
+                    <th>Status</th>
+                    <th>Total Vaccine&nbsp;</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr data-status="normal">
+                    <td>C1</td>
+                    <td>General hospital Divulapitiya</a></td>
+                    <td>Sinopharm</td>
+                    <td><span class="label label-success">Normal</span></td>
+                    <td>2 345 678</td>
+                    <td><a href="#" class="btn btn-sm manage">Add</a></td>
+                </tr>
+                <tr data-status="normal">
+                    <td>C2</td>
+                    <td>KDU hospital</a></td>
+                    <td>Phizer</td>
+                    <td><span class="label label-success">Normal</span></td>
+                    <td>845 678</td>
+                    <td></a></td>
+                </tr>
+                <tr data-status="low">
+                    <td>C3</td>
+                    <td>General hospital Gampaha</a></td>
+                    <td>Sinopharm</td>
+                    <td><span class="label label-danger">Low</span></td>
+                    <td>678 432</td>
+                    <td></a></td>
+                </tr>
+                <tr data-status="normal">
+                    <td>C4</td>
+                    <td>General hospital Kandy</a></td>
+                    <td>Modarna</td>
+                    <td><span class="label label-success">Normal</span></td>
+                    <td>256 346</td>
+                    <td></a></td>
+                </tr>
+                <tr data-status="low">
+                    <td>C5</td>
+                    <td>General hospital Minuwangoda</a></td>
+                    <td>Phizer</td>
+                    <td><span class="label label-danger">Low</span></td>
+                    <td>586 678</td>
+                    <td></a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div> 
+<script src="table.js"></script>    
+</body>
+
+</html>

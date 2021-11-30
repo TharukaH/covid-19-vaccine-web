@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"/>
+    <link rel="stylesheet" href="dashboard.css" />
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image" href="logo.png">
+    <title>Head Office</title>
+  </head>
+
+  <!--calander start-->
+  <body>
+    <br><br>
+    <input type="date">
+  </body>
+  <!--calander end-->
+
+  <body id="body">
+    <div class="container">
+      <main>
+        <div class="main__container">
+
+          <!-- CHARTS STARTS HERE -->
+          <div class="charts">
+            <div class="charts__right">
+              <div class="charts__right__title">
+                <div>
+                  <h1>All Island Vaccination Progress</h1>
+                </div>
+                <i class="fa fa-medkit" aria-hidden="true"></i>
+              </div>
+
+              <div class="charts__right__cards">
+                <div class="card1">
+                  <h1>Half Vaccinated</h1>
+                  <p>2 546 799</p>
+                </div>
+
+                <div class="card2">
+                  <h1>Fully Vaccinated</h1>
+                  <p>1 424 200</p>
+                </div>
+
+                <br><br>
+                <div class="card3">
+                  <h1>Age:18-29</h1>
+                  <p>Half : 432 390</p>
+                  <p>Fully : 392 200</p>
+                </div>
+                <div class="card4">
+                  <h1>Age:30-60</h1>
+                  <p>Half : 432 390</p>
+                  <p>Fully : 392 200</p>
+                </div>
+                <div class="card5">
+                  <h1>Age:60+</h1>
+                  <p>Half : 432 390</p>
+                  <p>Fully : 392 200</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- CHARTS ENDS HERE -->        
+        </div>
+      </main>
+
+      <div class="sidebar">
+        <div class="logo-details">
+          <div class="logo">
+            <div class="logo_name">CITY SMART</div>
+          </div>
+          <i class='bx bx-menu' id="btn" ></i>
+        </div>
+        <ul class="nav-list">   
+          <li>
+            <a href=dashboard.html>
+              <i class='bx bx-grid-alt'></i>
+              <span class="links_name">Dashboard</span>
+            </a>
+             <span class="tooltip">Dashboard</span>
+          </li>
+         <li>
+           <a href=progress.html>
+             <i class='bx bx-bar-chart-alt-2' ></i>
+             <span class="links_name">Vaccination Progress</span>
+           </a>
+           <span class="tooltip">Vaccination Progress</span>
+         </li>
+         <li>
+           <a href="password.html">
+             <i class='bx bx-user' ></i>         
+             <span class="links_name">Password Manager</span>
+           </a>
+           <span class="tooltip">Password Manager</span>
+         </li>
+         <li class="profile">
+          <a href="index.html">
+             <i class='bx bx-log-out' ></i>
+             <span class="links_name">Log Out</span>
+          </a>
+             <span class="tooltip">Log Out</span>
+         </li>
+        </ul>
+      </div>
+      <script src="dashboard.js"></script>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="script.js"></script>
+  </body>
+
+  <br><br><br><br><br>
+<body>
+  <div class="container2">    
+    <div class="select-box">
+        <div class="options-container">
+            <div class="option">
+                <input type="radio" class="radio" id="divulapitiya" name="category"/>
+                <label for="divulapitiya">Divulapitiya</label>
+            </div>
+
+            <div class="option">
+                <input type="radio" class="radio" id="marandagahamula" name="category" />
+                <label for="marandagahamula">Marandagahamula</label>
+            </div>
+
+            <div class="option">
+                <input type="radio" class="radio" id="dunagaha" name="category" />
+                <label for="dunagaha">Dunagaha</label>
+            </div>
+
+            <div class="option">
+                <input type="radio" class="radio" id="minuwangoda" name="category" />
+                <label for="minuwangoda">Minuwangoda</label>
+            </div>
+
+            <div class="option">
+                <input type="radio" class="radio" id="gampaha" name="category" />
+                <label for="gampaha">Gampaha</label>
+            </div>
+
+            <div class="option">
+                <input type="radio" class="radio" id="palmadulla" name="category" />
+                <label for="palmadulla">Palmadulla</label>
+            </div>
+
+            <div class="option">
+                <input type="radio" class="radio" id="ratmalana" name="category" />
+                <label for="ratmalana">Ratmalana</label>
+            </div>
+
+            <div class="option">
+                <input type="radio" class="radio" id="mount lavinia" name="category" />
+                <label for="mount lavinia">Mount lavinia</label>
+            </div>
+
+            <div class="option">
+                <input type="radio" class="radio" id="moratuwa" name="category" />
+                <label for="moratuwa">Moratuwa</label>
+            </div>
+        </div>
+
+        <div class="selected">
+            Select By District
+        </div>
+
+        <div class="search-box">
+            <input type="text" placeholder="Start Typing..." />
+        </div>
+    </div>
+  </div>
+  <script src="scroll.js"></script>
+  <input type="submit" class="btn" value="Search">
+</body>
+  <body id="body">
+    <div class="container">
+      <main>
+        <div class="main__container">
+
+          <!-- CHARTS STARTS HERE -->
+          <div class="charts">
+            <div class="charts__right2">
+              <div class="charts__right__title">
+                <div>
+                  <h1>Districts Vaccination Progress</h1>
+                  <p></p>
+                </div>
+                <i class="fa fa-medkit" aria-hidden="true"></i>
+              </div>
+
+              <div class="charts__right__cards">
+                <div class="card6">
+                  <h1>Half Vaccinated</h1>
+                  <p>2 546 799</p>
+                </div>
+
+                <div class="card7">
+                  <h1>Fully Vaccinated</h1>
+                  <p>1 424 200</p>
+                </div>
+
+                <br><br>
+                <div class="card8">
+                  <h1>Age:18-29</h1>
+                  <p>Half : 432 390</p>
+                  <p>Fully : 392 200</p>
+                </div>
+                <div class="card9">
+                  <h1>Age:30-60</h1>
+                  <p>Half : 432 390</p>
+                  <p>Fully : 392 200</p>
+                </div>
+                <div class="card10">
+                  <h1>Age:60+</h1>
+                  <p>Half : 432 390</p>
+                  <p>Fully : 392 200</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- CHARTS ENDS HERE -->        
+        </div>
+      </main>
+    </div>
+  </body>
+
+</html>
